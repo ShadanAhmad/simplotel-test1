@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        
+ body {
+         margin: 0;
+         padding: 0;
+      }
+       
+.intro {
+         background: linear-gradient( to bottom left,rgb(255,185,235) 35%,rgb(255,246,175), rgb(255,224,196));
+         padding-bottom: 65px;
+       }
+    
+ .head {
+         background-color: #FF7171;
+         padding-top: 15px;
+         padding-bottom: 15px;
+      }
+           
+.robin-img{
+         width: 700px;
+      }
+        
+header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+       
+        .main-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+           
+        }
+
+        .left-section {
+            flex: 1;
+            order: 1;
+        }
+
+        .right-section {
+    flex: 1;
+    /* padding: 13px; */
+    padding-bottom: 0px;
+    padding-right: 77px;
+    padding-left: 60px;
+    padding-top: 30px;
+}
+
+        .right-section h2 {
+    font-size: 51px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-family: sans-serif;
+    letter-spacing: 14px;
+}
+
+.right-section p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    line-height: 30px;
+    padding-top: 30px;
+    font-weight: 200;
+}
+
+.right-section button {
+    background-color: #FF7171;
+    color: #fff;
+    padding: 17px 94px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 35px;
+}
+
+        /* Third Section */
+        .third-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 50px; */
+    padding-top: 72px;
+    padding-left: 60px;
+    padding-right: 152px;
+}
+
+        .left-part {
+            flex: 1;
+            order: 1;
+        }
+
+        .right-part {
+            flex: 1;
+           
+            display: grid;
+            grid-template-columns: repeat(2, 0fr);
+            gap: 20px;
+        }
+
+        .right-part img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+           
+        }
+
+
+        .right-part-content h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .right-part-content p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .right-part-content button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        img.rechel-img {
+    width: 297px;
+    height: 100%;
+}
+img.mister-img {
+    width: 297px;
+    height: 236px;
+}
+img.eva-bronzini-img {
+    width: 297px;
+    height: 236px;
+}
+img.rechel-img {
+    width: 297px;
+    height: 236px;
+}
+.robin-img {
+    width: 718px;
+    height: 709px;
+}
+.left-part {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.right-part-content {
+    /* padding: 11px; */
+    margin-top: 90px;
+    /* width: 50%; */
+    width: 448px;
+    height: 261px;
+    background: #FF7171;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 20px;
+    padding-bottom: 21px;
+    margin-right: -17px;
+}
+img.rechel-img {
+    width: 297px;
+    height: 109%;
+}
+img.eva-bronzini-img {
+    width: 297px;
+    height: 236px;
+    margin-top: -218px;
+}
+
+.menu-icon {
+    color: #2b2a2a;
+    /* width: 33px; */
+    /* height: 26px; */
+    font-size: 41px;
+    padding-left: 21px;
+}
+h1.h1-sec-3 {
+    font-size: 57px;
+    font-family: sans-serif;
+    letter-spacing: 4px;
+   
+}
+.right-part-content h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-weight: 200;
+   
+}
+.right-part-content button {
+    margin-top: -16px;
+    background-color: transparent;
+    color: black;
+    padding: 2px 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+  
+}
+span.arr-r {
+    font-size: 23px;
+    font-weight: 700;
+   
+}
+/* Original styles... */
+
+.topnav {
+    background-color: #FF7171;
+    overflow: hidden;
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #2b2a2a;
+               text-decoration: none;
+              font-weight: 600;
+               margin: 0 34px;
+               font-family: initial;
+             font-size: 21px;
+}
+
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+.topnav .icon {
+  display: none;
+}
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+@media screen and (min-width: 940px){
+    div#myTopnav {
+    display: flex;
+    justify-content: center;
+}
+.robin-img {
+    width: 100%;
+    height: 709px;
+}
+
+}
+
+@media screen and (min-width:1600px){
+.robin-img {
+    width: 100%;
+    height: 709px;
+}
+img.mister-img {
+    width: 473px;
+    height: 290px;
+}
+img.rechel-img {
+    width: 367px;
+    height: 109%;
+}
+img.eva-bronzini-img {
+    width: 473px;
+    height: 290px;
+    margin-top: -260px;
+}
+}
+@media screen and (max-width: 700px) {
+  /* .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav a {
+   
+    font-size: 16px;
+    line-height: 25px;
+} */
+  .main-section {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+}
+.right-part-content {
+    margin-top: 1px;
+    width: 82%;
+    height: 143px;
+    background: #FF7171;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-bottom: 0px;
+    margin-right: 46px;
+}
+.right-part-content h3 {
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+h1.h1-sec-3 {
+    font-size: 21px;
+    font-family: sans-serif;
+    letter-spacing: 4px;
+}
+img.eva-bronzini-img {
+    width: 245px;
+    height: 150px;
+    margin-top: -171px;
+}
+img.rechel-img {
+    width: 150px;
+    height: 306px;
+}
+img.mister-img {
+    width: 245px;
+    height: 150px;
+}
+.third-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 72px;
+    padding-left: 60px;
+    padding-right: 152px;
+    flex-direction: column;
+    
+}
+.main-section {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: column;
+    flex-direction: column-reverse;
+}
+.robin-img {
+    width: 100%;
+    height: 313px;
+}
+.left-part {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    contain: content;
+    align-content: space-around;
+}
+.right-section button {
+    background-color: #FF7171;
+    color: #fff;
+    padding: 11px 54px;
+    border: none;
+    cursor: pointer;
+    font-size: 11px;
+    margin-top: 2px;
+}
+.right-section p {
+    font-size: 13px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    line-height: 30px;
+    padding-top: 30px;
+}
+.right-section h2 {
+    font-size: 25px;
+    margin-bottom: -30px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.third-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 51px;
+    padding-left: 22px;
+    padding-right: 22px;
+    flex-direction: column;
+}
+.right-part-content {
+    margin-top: 1px;
+    width: 82%;
+    height: 143px;
+    background: #FF7171;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-right: 46px;
+}
+}
+
+/* @media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+} */
+@media screen and (min-width: 1800px) {
+    .topnav a {
+    font-size: 26px;
+}
+.right-section p {
+    font-size: 27px;
+    line-height: 66px;
+    padding-top: 30px;
+}
+.right-part-content {
+    width: 627px;
+    height: 363px;
+}
+.right-part-content h3 {
+    font-size: 24px;
+}
+.right-part-content button {
+    font-size: 29px;
+}
+}
+
+@media screen and (max-width: 1370px) {
+    .right-part-content {
+    margin-right: -83px;
+}
+
+}
+@media screen and (max-width: 1285px) {
+    .right-part-content {
+    margin-right: -128px;
+}
+
+}
+
+@media screen and (max-width: 1207px) {
+    img.eva-bronzini-img {
+    width: 252px;
+    height: 236px;
+    margin-top: -218px;
+}
+img.mister-img {
+    width: 252px;
+    height: 236px;
+}
+
+}
+@media screen and (max-width: 1189px) {
+    h1.h1-sec-3 {
+    font-size: 48px;
+    letter-spacing: 3px;
+}
+.right-part-content {
+ 
+    width: 396px;
+    height: 261px;
+
+}
+.right-section h2 {
+    font-size: 41px;
+}
+
+}
+
+@media screen and (max-width: 1139px) {
+    img.rechel-img {
+    width: 247px;
+    height: 119%;
+}
+img.eva-bronzini-img {
+    width: 252px;
+    height: 214px;
+    margin-top: -162px;
+}
+img.mister-img {
+    width: 252px;
+    height: 214px;
+}
+
+}
+
+@media screen and (max-width: 1087px) {
+    .right-part-content {
+    width: 362px;
+    height: 261px;
+}
+h1.h1-sec-3 {
+    font-size: 38px;
+    letter-spacing: 3px;
+}
+.right-part-content {
+    width: 362px;
+    height: 210px;
+}
+
+}
+@media screen and (max-width: 1046px) {
+    img.mister-img {
+    width: 213px;
+    height: 214px;
+}
+img.eva-bronzini-img {
+    width: 213px;
+    height: 214px;
+    margin-top: -152px;
+}
+.right-part {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    gap: 7px;
+}
+.topnav a {
+
+    margin: 0 32px;
+    font-family: initial;
+    font-size: 21px;
+}
+}
+
+@media screen and (max-width: 999px) {
+
+    .right-part-content {
+    width: 310px;
+    height: 210px;
+}
+.topnav a {
+    margin: 0 25px;
+    font-size: 19px;
+}
+.right-section h2 {
+    font-size: 31px;
+}
+}
+
+@media screen and (max-width: 940px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav a {
+   
+    font-size: 16px;
+    line-height: 25px;
+}
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .main-section {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    /* align-items: stretch; */
+    flex-direction: column;
+}
+.right-part-content {
+    /* padding: 11px; */
+    margin-top: 1px;
+    /* width: 50%; */
+    width: 82%;
+    height: 143px;
+    background: #FF7171;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-bottom: 0px;
+    margin-right: 46px;
+}
+.right-part-content h3 {
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+h1.h1-sec-3 {
+    font-size: 21px;
+    font-family: sans-serif;
+    letter-spacing: 4px;
+}
+img.eva-bronzini-img {
+    width: 100%;
+    height: 150px;
+    margin-top: -157px;
+}
+img.rechel-img {
+    width: 100%;
+    height: 306px;
+}
+img.mister-img {
+    width: 100%;
+    height: 150px;
+}
+.third-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 50px; */
+    padding-top: 72px;
+    padding-left: 60px;
+    padding-right: 152px;
+    flex-direction: column;
+    
+}
+.main-section {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    /* align-items: stretch; */
+    flex-direction: column;
+    flex-direction: column-reverse;
+}
+.robin-img {
+    width: 100%;
+    height: 398px;
+}
+.left-part {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    contain: content;
+    align-content: space-around;
+}
+.right-section button {
+    background-color: #FF7171;
+    color: #fff;
+    padding: 11px 54px;
+    border: none;
+    cursor: pointer;
+    font-size: 11px;
+    margin-top: 2px;
+}
+.right-section p {
+    font-size: 13px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    line-height: 30px;
+    padding-top: 30px;
+}
+.right-section h2 {
+    font-size: 25px;
+    margin-bottom: -30px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.third-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 50px; */
+    padding-top: 51px;
+    padding-left: 22px;
+    padding-right: 22px;
+    flex-direction: column;
+}
+
+.left-section {
+    width: 100%;
+}
+.right-part {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    /* width: 100%; */
+    gap: 7px;
+}
+.right-part-content {
+    /* padding: 11px; */
+    margin-top: 24px;
+    /* width: 50%; */
+    width: 100%;
+    height: 143px;
+    background: #FF7171;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 24px;
+    padding-bottom: 0px;
+    margin-right: 46px;
+}
+.right-section {
+    flex: 1;
+    /* padding: 13px; */
+    padding-bottom: 0px;
+    padding-right: 19px;
+    padding-left: 25px;
+    padding-top: 30px;
+}
+.topnav a {
+    margin: 0 15px;
+    font-size: 17px;
+}
+}
+  </style>
+</head>
+<body>
+<div class="intro">
+    <!-- Header Section -->
+    <header class="head">
+        <div class="topnav" id="myTopnav">
+            <a href="#">Home</a>
+            <a href="#">Order</a>
+            <a href="#">Food</a>
+            <a href="#">Restaurant</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Contact Us</a>
+            <a class="menu-icon" href="#">&#9776;</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+          </div>
+    </header>
+
+    <!-- Second Section -->
+    <div class="main-section">
+        <div class="right-section">
+            <h2>LOREM IPSUM </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id est vitae dolor rhoncus tristique. Maecenas metus quam, rhoncus euismod lorem in, sollicitudin viverra eros. Donec dictum luctus quam ut tristique. Curabitur nec faucibus purus. Quisque congue sem nec justo mollis, in tincidunt erat pretium. Sed pulvinar, massa ac porta viverra.
+            </p>
+            <button>Click Me</button>
+        </div>
+        <div class="left-section">
+            <img class="robin-img" src="HTML CSS Assignment/robin.jpg" alt="Left Section Image">
+        </div>
+       
+    </div>
+
+    <!-- Third Section -->
+    <div class="third-section">
+        <div class="left-part">
+            <div class="right-part">
+                <img class="mister-img" src="HTML CSS Assignment/rachel.jpg" alt="Image 1">
+                <img class="rechel-img" src="HTML CSS Assignment/mister.jpg" alt="Image 2">
+                <img class="eva-bronzini-img" src="HTML CSS Assignment/eva-bronzini.jpg" alt="Image 3">
+            </div>
+            <div class="right-part-content">
+                <h3 class="h3-sec-3">LOREM IPSUM</h3>
+                <h1 class="h1-sec-3">LOREM IPSUM SET ADEMIR</h1>
+                <button> Click<span class="arr-r">&#8594;</span></button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+   function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+</html>
